@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int books, returned, pending = 0;
+
+    cout << "Enter total number of books: ";
+    cin >> books;
+
+    for(int i = 1; i <= books; i++)
+    {
+        cout << "Book " << i << " returned? (1-Yes / 0-No): ";
+        cin >> returned;
+
+        if(returned == 0)
+            pending++;
+    }
+
+    cout << "\nPending books: " << pending;
+
+    return 0;
+}
