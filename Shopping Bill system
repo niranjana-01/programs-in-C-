@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int price, total = 0;
+
+    cout << "Enter item price (0 to finish): ";
+    cin >> price;
+
+    while(price != 0) {
+        total += price;
+        cout << "Enter item price (0 to finish): ";
+        cin >> price;
+    }
+
+    cout << "Total Bill = Rs." << total;
+}
