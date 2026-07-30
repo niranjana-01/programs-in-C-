@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int glass, total = 0;
+
+    cout << "Enter glasses of water (0 to stop): ";
+    cin >> glass;
+
+    while(glass != 0) {
+        total += glass;
+        cout << "Enter glasses of water (0 to stop): ";
+        cin >> glass;
+    }
+
+    cout << "Total Glasses Drunk = " << total;
+}
