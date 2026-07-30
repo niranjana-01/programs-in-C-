@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, present = 0, status;
+
+    cout << "Number of students: ";
+    cin >> n;
+
+    for(int i = 1; i <= n; i++) {
+        cout << "Student " << i << " (1=Present, 0=Absent): ";
+        cin >> status;
+
+        if(status == 1)
+            present++;
+    }
+
+    cout << "Present Students = " << present;
+}
