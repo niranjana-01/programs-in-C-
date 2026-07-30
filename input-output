@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+   int x=5;
+   cin>>x;
+   cout<< "X=" <<x;
+return 0;
+}
