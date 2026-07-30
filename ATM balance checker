@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int amount, total = 1000;
+
+    while(total > 0) {
+        cout << "Enter withdraw amount: ";
+        cin >> amount;
+
+        if(amount <= total) {
+            total -= amount;
+            cout << "Remaining Balance = " << total << endl;
+        } else {
+            cout << "Insufficient Balance";
+            break;
+        }
+    }
+}
