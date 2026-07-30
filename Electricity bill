@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int days, unit, total = 0;
+
+    cout << "Enter days: ";
+    cin >> days;
+
+    for(int i = 1; i <= days; i++) {
+        cout << "Units used on day " << i << ": ";
+        cin >> unit;
+        total += unit;
+    }
+
+    cout << "Total Units = " << total;
+}
